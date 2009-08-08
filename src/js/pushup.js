@@ -40,14 +40,14 @@ var Pushup = {
 Pushup.conditions = {
   IE: (function(agent) {
     var version = /MSIE ([\d.]+)/.exec(agent);
-    return version && parseFloat(version[1]) < 8;
+    return version && parseFloat(version[1]) < 7;
   })(navigator.userAgent),
   Firefox: Pushup.Browser.Firefox &&
-    parseFloat(navigator.userAgent.match(/Firefox[\/\s](\d+)/)[1]) < 3.5,
+    parseFloat(navigator.userAgent.match(/Firefox[\/\s](\d+)/)[1]) < 3.0,
   Safari: Pushup.Browser.Safari &&
-    parseFloat(navigator.userAgent.match(/AppleWebKit\/(\d+)/)[1]) < 530, //4
+    parseFloat(navigator.userAgent.match(/AppleWebKit\/(\d+)/)[1]) < 500, //4
   Opera: Pushup.Browser.Opera && (!window.opera.version ||
-    parseFloat(window.opera.version()) < 9.64)
+    parseFloat(window.opera.version()) < 9.5)
   //Todo: Chrome?
 };
 
