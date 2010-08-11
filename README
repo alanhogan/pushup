@@ -1,1 +1,4 @@
-Note: There are newer versions of Pushup. These versions let you more easily specify custom browser versions to target.
+## Consider another fork or port 
+
+
+Note: There are newer forks of Pushup. These versions let you more easily specify custom browser versions to target, for example, [Stuart Loxton's jQuery port](http://github.com/stuartloxton/jquery-pushup).
